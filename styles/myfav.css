@@ -1,0 +1,94 @@
+/* Questo è il CSS per tutto il corpo della pagina */
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+/* Intestazione della pagina */
+#heading{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 95%;
+    padding: 20px 50px;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 20px;
+    
+}
+/* CSS del div dei bottoni dell'intestazione  */
+#btns{
+    padding-right: 50px;
+}
+#btns button , #home{
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+#btns button:hover {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: purple;
+}
+
+#home:hover{
+    color: violet;
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+}
+/* Cancella tutti i film preferiti  */
+#clear-whole-list{
+    color: grey;
+}
+/* Elemento della lista dei film */
+#list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie-details{
+    margin: 20px;
+    border-radius: 20px;
+}
+/* immagini film  */
+#movieimg{
+    display: block;
+    border-radius: 20px;
+    height: 310px;
+    width: 180px;
+    margin: auto;
+}
+#details{
+    display: block;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    margin: auto;
+    max-width: 100px;
+}
+.title a{
+    display: block;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    overflow: auto;
+
+}
+/* econa rimuovere film  */
+#removeicon{
+    font-size: 1.6rem;
+    color: red;
+}
+
+
+

@@ -1,0 +1,166 @@
+
+/*stile corpo pagina*/
+body {
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/**stile form*/
+form {
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/*LOGIN*/
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group i.icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.form-group input {
+  flex: 1;
+}
+
+/*stile intestazione principale*/
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: purple;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*stile intestazione secondaria*/
+h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: purple;
+}
+
+/*stile input*/
+input {
+  display: block;
+  border: 1px solid purple; 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+
+/*stile etichette*/
+label {
+  font-size: 1.2rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/*stile bottoni*/
+button {
+  background-color: purple;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+   
+}
+
+
+
+
+
+/*stile link*/
+.ca {
+  font-size: 1rem;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+}
+
+.ca:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+.icon-warning {
+  width: 90px;
+}
+
+.icon-success{
+  width: 90px;
+}
+
+
+/*stile pagina quando la dim finestra è inferiore a 700*/
+@media only screen and (max-width: 500px) {
+form {
+padding: 30px;
+}
+
+h1 {
+font-size: 2rem;
+margin-bottom: 30px;
+}
+
+h2 {
+font-size: 1.5rem;
+margin-bottom: 30px;
+}
+
+input {
+font-size: 1rem;
+padding: 8px;
+margin: 8px 0;
+}
+
+label {
+font-size: 1rem;
+}
+
+button {
+font-size: 1rem;
+padding: 8px 16px;
+}
+
+.icon-warning {
+  width: 45px;
+}
+.error {
+  font-size: 0.8rem;
+}
+
+}
+

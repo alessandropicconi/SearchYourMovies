@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SYM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3styling.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+body{background-color: black;}
+</style>
+<!--
+   <?php include "web/fragment/user-data.php"; ?> 
+-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-grey w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large palette-netflix-bright-red w3-hover-white"><i class="fa fa-home w3-margin-right"></i> Home </a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small palette-netflix-bright-red w3-padding-large w3-hover-white" title="Account"> Account </i></a>
+ </div>
+</div>
+
+<!-- Navbar Schermi Piccoli, forse da rimuovere -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <!-- Home riporta alla pagina iniziale -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large palette-netflix-bright-red">Account</a>
+</div>
+
+<!-- Contenitore Pagina -->
+<div class="w3-container w3-content palette-netflix-black" style="max-width:1400px; margin-top: 80px;">    
+  <!-- Griglia -->
+  <div class="w3-row" style="display: flex; background-color: red;">
+    <!-- Colonna Sinistra -->
+    <div style="width: 20%;">
+      <!-- Profilo -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Salve, Utente</h4> <!-- Sostituire Utente con <?php echo $_SESSION['name']; ?> -->
+         <p class="w3-center"><img src="avatar.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <button type="button" class="w3-button palette-netflix-bright-red" style="margin-bottom: 16px;"> Segnala </button>
+        </div>
+      </div>
+    <br>
+  </div>
+    <!-- Fine Colonna Sinistra -->
+    
+    
+    <!-- Colonna Centrale -->
+    <div class="tumadre" style="width: 78.55555%;background-color: blue;">
+      <div class="w3-container w3-card w3-white w3-round" style="margin-left:16px; width:100%; margin-right: 16px;"><br>
+        <h4>Le tue recensioni</h4><br>
+        <hr class="w3-clear">
+        <p>Visualizza qui le tue recensioni di film</p>
+          <div class="w3-row-padding" style="margin:0 -16px"> 
+        </div>
+        <div class="w3-padding-16">
+      </div> 
+    </div>
+    <!-- End Middle Column -->
+  </div>
+  
+  <!-- End Grid -->
+</div>
+
+
+<div class="w3-container w3-card w3-white w3-round " style="max-width:1400px;"><br>
+  <h4>I tuoi film preferiti</h4>
+  <br>
+  <hr class="w3-clear">
+  <p>Visualizza qui i tuoi film preferiti</p>
+
+  <!-- Movie Container-->
+  <div id="movie-container">
+    <div class="movie-element"></div>
+  </div>
+
+  <!-- Navigazione Pagina-->
+  <div class="page-navigation">
+    <button id="prev-page" class="w3-button palette-netflix-bright-red" style="margin: 16px"> Prev </button>
+    <button id="next-page" class="w3-button palette-netflix-bright-red" style="margin: 16px"> Next </button>
+  </div>
+
+  <button type="button" class="w3-button palette-netflix-bright-red" style="margin-bottom: 16px;" onclick="addMovieToPage()"> Aggiungi un Film </button>
+  <div class="w3-row-padding" style="margin:0 -16px">
+  </div>
+</div>
+
+
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container palette-netflix-bright-red w3-padding-16">
+  <h5>SYM</h5>
+</footer>
+
+<footer class="w3-container palette-netflix-black">
+  <p>Natalia Mucha, Simone Parrella, Alessandro Picconi</a></p>
+</footer>
+
+<script type="text/javascript" src="script/script.js"></script>
+ 
+
+</body>
+</html> 

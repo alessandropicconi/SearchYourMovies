@@ -1,0 +1,136 @@
+html,body
+{
+    font-family:Verdana,sans-serif;font-size:15px;line-height:1.5
+}
+
+html
+{
+    box-sizing:border-box;
+    overflow-x:hidden
+}
+
+*,*:before,*:after{
+    box-sizing:inherit
+}
+
+body{
+    background-color: #282626;
+}
+
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1{
+    font-size: 60px;
+}
+
+.barra{
+    width:100%; /**/
+    overflow:hidden; /**/
+    display:inline-block; /**/
+    /*padding:8px 16px;*/
+    border:none; /**/
+    position: static; /**/
+}
+
+.fissa-in-alto{
+    position:fixed; /**/
+    z-index:1; /**/
+}
+
+
+/*
+
+.my-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.my-bar{
+    width:auto;
+    width:100%;
+    overflow:hidden;
+    display:inline-block;
+}
+.my-bar{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+}
+
+.my-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.my-button:hover{
+    color:#000!important;
+    background-color:#ccc!important
+}
+
+.my-container:before, .my-container:after{
+    content:"";
+    display:table;
+    clear:both
+}  /*Questo mette prima e dopo degli spazi "" per separare il container
+
+
+
+.my-bar{position:static;}
+.my-bar-block .my-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.my-bar-block.my-center .my-bar-item{text-align:center}.w3-block{display:block;width:100%}
+.my-content,.my-auto{margin-left:auto;margin-right:auto}
+.my-content{max-width:980px}
+
+.col-3{
+    width:24.99999%
+}
+
+
+.nascosto{
+    visibility: hidden;
+}
+
+.palette-netflix-black{
+    background-color:#000000;
+    color:white;
+}
+
+.palette-netflix-dark-red{
+    background-color:#3D0000;
+    color:white;
+}
+.palette-netflix-red{
+    background-color:#950101;
+
+}
+.palette-netflix-bright-red{
+    background-color:#FF0000;
+}
+
+
+
+/*
+w3-left-align ha solo text-align:left
+w3-large ha solo font-size:18px
+w3-padding-large ha solo padding: 18px 24px
+w3-padding uguale solo altri valori di padding
+w3-center ha solo text-align:center
+w3-opacity ha solo opacity:0.valore_che_vuoi
+w3 clear e w3 container sono uguali
+
+
+*/
+

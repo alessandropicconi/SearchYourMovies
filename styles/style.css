@@ -1,0 +1,384 @@
+
+body{
+    /*
+    margin: 0px;
+    padding: 0px;
+    */
+    
+    background-color: black;
+    background-blend-mode: multiply;
+    background-size:cover;
+    color: rgb(255, 255, 255);
+}
+/* CSS per la sezione dell'intestazione*/
+#header{
+    /*
+    z-index: 10;
+    justify-content: space-between;
+    */
+    width: 100%;
+    display: flex;
+    align-items: left;
+    
+    
+}
+/* stile immagine logo  */
+#logodiv{
+    width: 250px;
+    height: 200px;
+}
+#logoimg{
+    width: 110%;
+    height: 100%;
+}
+/* stile barra di ricerca */
+#search-bar{
+    
+    background-color: black;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.search-content{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    top: 15px;
+}
+#search-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+/* stile input barra di ricerca  */
+#search-area input{
+    width: 100%;
+    font-size: 1.6rem;
+    border: none;
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+/*stile per gli elementi <input> quando sono in focus*/
+#search-area input:focus {
+  outline: none;
+  border-bottom-color: rgb(42, 187, 139);
+}
+/*
+#search-area input:focus + .search-icon {
+  color: rgb(42, 187, 139);
+}*/
+
+/* Stile per l'icona di ricerca */
+#search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #ccc;
+    transition: all 0.3s ease-in-out;
+}
+#searchMovie {
+    transition: width 0.5s;
+    overflow: hidden;
+}
+
+#searchMovie.visible {
+    width: 200px;
+}
+
+
+/* stile sezione dei risultati di ricerca  */
+.results{
+    padding: 0px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+.results ul{
+    padding: 0px;
+    margin: 0px;
+}
+.results ul li{
+    list-style: none;
+    padding: 5px 15px;
+    opacity: 0;
+    display: none;
+    border-radius: 3px;
+    transition: all .5s linear;
+}
+
+
+/* stile per la sezione dei preferiti incluso il pulsante  */
+#right-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px;
+    align-items: center;
+}
+#right-section .favbutton{
+    border: none;
+    color: white;
+    background:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+#right-section .favbutton:hover, #right-section select:hover{
+    color: rgb(42, 187, 139);;
+    text-decoration: none;
+}
+#my-list a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#right-section .logbutton{
+    border: none;
+    color: white;
+    background:red;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+#right-section .logbutton:hover, #right-section select:hover{
+    color: rgb(42, 187, 139);;
+    text-decoration: none;
+}
+
+#right-section .logoutbutton{
+    border: none;
+    color: white;
+    background:none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+#right-section .logoutbutton:hover, #right-section select:hover{
+    color: rgb(42, 187, 139);;
+    text-decoration: none;
+}
+
+#logout-button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#login-button a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown {
+    margin-left: auto;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown-button {
+    background-color: black; 
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    padding: 30px;
+}
+
+.dropdown-button:hover {
+    background-color: black; 
+    color: rgb(42, 187, 139);
+    text-decoration: none;
+}
+
+/* sezione film  */
+#movie-container{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.movie-element{
+    margin: 10px;
+}
+.movie-poster{
+    height: 300px;
+    width: 200px;
+}
+.movie-element:hover{
+    transform: scale(1.1);
+}
+.movie-poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all .2s ease-in;
+}
+/* stile per il titolo del film e la sezione delle 
+etichette all'interno della carta del film */
+.movie-title{
+    max-width: 200px;
+    
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.movie-element-tags{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* stile per un componente di valutazione del 
+film e un pulsante per aggiungere un film a una lista. */
+.movie-rating, .add-movie-to-list{
+    font-size: 1.4rem;
+}
+.movie-rating i{
+    color: gold;
+}
+.add-movie-to-list{
+    color: #f11692;
+}
+.add-movie-to-list:hover{
+    color: red;
+}
+/* stile per i pulsanti "precedente" e "successivo" 
+all'interno di una barra di navigazione.  */
+
+
+.page-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+/*
+.page-navigation button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(234, 33, 117);
+}
+*/
+.page-navigation button:hover{
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* Regole CSS per schermi con larghezza massima di 700px */
+    #header {
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    #logodiv {
+      width: 50%;
+      height: auto;
+    }
+  
+    #search-bar {
+      
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  
+    .results {
+      max-height: none;
+    }
+  
+    #movie-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .dropdown {
+        display: block;
+    }
+    #my-list {
+        display: none;
+    }
+    .favbutton {
+        display: none;
+    } 
+    #logout-button { 
+        display:none;
+    }
+
+    
+    
+}
+
+
+
+
+@media (max-width: 550px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logodiv {
+      width: 200px;
+      height: auto;
+    }
+
+    #login-button {
+        margin-top: 30px;
+    }
+    
+    .favbutton {
+        display: none;
+    } 
+
+    #logout-button { 
+        display:none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+    #my-list {
+        display: none;
+    }
+   
+
+}
+
+
+
+
+
+
+  

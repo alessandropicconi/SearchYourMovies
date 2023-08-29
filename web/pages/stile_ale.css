@@ -1,0 +1,64 @@
+.commenti{
+    width: 60%;
+    background-color: #ccc;
+    text-align: left;
+    padding: 16px; 
+    display: table; 
+    content:''; 
+    clear:both; 
+    border-radius: 8px; 
+     
+    margin-bottom:16px;
+    border:1px solid #171717;
+    border-left:4px solid #171717
+}
+
+.container_commenti{
+    background-color: #aaa; 
+    padding: 8px 16px; 
+    margin-bottom: 16px; 
+    border:1px solid black; 
+    border-radius:10px; 
+    border-left:4px solid black;
+}
+
+.bottone{
+    background-color: #555;
+    display: block;
+    border-radius: 10px;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 9px #999;
+    border: none;
+    padding: 16px;
+    text-align: center;
+}
+
+.bottone:hover{
+    background-color: red;
+    box-shadow: 0 5px #999;
+    transform: translateY(4px);
+}
+
+.bottone:active{
+    box-shadow: 0 0 #999;
+    transform: translateY(8px);
+}
+
+.area_testo_commento{
+    border-radius: 10px; 
+    text-align: left;
+    resize: none; 
+    /*height: 200px;*/
+    display: block;
+    font-size: 20px;
+    width: 80%; 
+    margin: auto; 
+    margin-bottom: 40px;
+    margin-top: 40px; 
+    height: 80%; 
+    border: none; 
+    background-color: #ccc; 
+    color: grey;
+}
