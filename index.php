@@ -49,9 +49,6 @@
             <?php   if(!isset($_SESSION)) session_start();
                     if (isset($_SESSION['id']) && isset($_SESSION['user_name']) && isset($_SESSION['is_admin'])) { ?>
 
-                    
-
-
                     <h1>
                         Hi, <?php echo $_SESSION['user_name'] ?>
                     </h1>
@@ -61,8 +58,6 @@
                   elseif($_SESSION['is_admin']==1) {?> <a href="/web/pages/admin.php">Admin Page</a> <?php ;}?>
                     </button>
 
-
-                
                     <button class="logoutbutton" id="logout-button">
                         <a href="profiloutente.php">Profilo</a>
                     </button>

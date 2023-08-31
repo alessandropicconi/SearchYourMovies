@@ -17,7 +17,6 @@ id SERIAL,
 user_id INT,
 movie_id INT,
 FOREIGN KEY (user_id) REFERENCES users(id)
-
 )
 
 CREATE TABLE reports(
@@ -36,10 +35,16 @@ CREATE TABLE reviews(
   review TEXT
 )
 
-/*
 
-mancano i commenti
-*/
+CREATE TABLE comments{
+  id SERIAL,
+  comment TEXT,
+  name varchar(255),
+  movie_id INT,
+  movie_name TEXT,
+  parent_id INT
+} FOREIGN KEY (name) REFERENCES users(user_name)
+
 
 
 

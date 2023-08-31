@@ -98,7 +98,7 @@ if (isset($_POST['uname']) && isset($_POST['email']) && isset($_POST['password']
 				// Setting the email content
 					
 				$mail->Subject = "Welcome to SYM";
-				$mail->Body = '<p> This is the Verification Link <b><a href="http://localhost/web/action/?Verification='.$code.'">http://localhost/web/action/?Verification='.$code.'</a></b></p>';
+				$mail->Body = '<p> This is the Verification Link <b><a href="http://localhost:3000/web/action/?Verification='.$code.'">http://localhost:3000/web/action/?Verification='.$code.'</a></b></p>';
 
 					
 				//$mail->send();

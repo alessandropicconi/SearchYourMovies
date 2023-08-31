@@ -35,6 +35,7 @@ class FirstCest
         $I->see('Lascia una recensione: Test');
         $I->fillField('review', 'ciao');
         $I->click(['id'=>'ziocane']);
+        $I->see('Test:ciao');
         include "../SYM_ale/db/db_conn.php";
         $wipe = "DELETE FROM reviews WHERE name='Test'";
         pg_query($conn,$wipe);

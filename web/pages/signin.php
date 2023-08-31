@@ -64,8 +64,10 @@ if(!isset($_SESSION['access_token']))
     <a href="/" class="ca">SYM</a>
     <p class="social-text">Or Sign up with Google</p>
     <div class="social-media">
+
         <a href="#" class="social-icon google-button">
-            <?php echo $login_button; ?>
+            <?php echo $login_button; ?></a>
+
     </div>
 </form>
 

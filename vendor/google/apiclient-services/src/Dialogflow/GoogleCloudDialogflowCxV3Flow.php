@@ -30,8 +30,6 @@ class GoogleCloudDialogflowCxV3Flow extends \Google\Collection
   public $displayName;
   protected $eventHandlersType = GoogleCloudDialogflowCxV3EventHandler::class;
   protected $eventHandlersDataType = 'array';
-  protected $knowledgeConnectorSettingsType = GoogleCloudDialogflowCxV3KnowledgeConnectorSettings::class;
-  protected $knowledgeConnectorSettingsDataType = '';
   /**
    * @var string
    */
@@ -86,20 +84,6 @@ class GoogleCloudDialogflowCxV3Flow extends \Google\Collection
   public function getEventHandlers()
   {
     return $this->eventHandlers;
-  }
-  /**
-   * @param GoogleCloudDialogflowCxV3KnowledgeConnectorSettings
-   */
-  public function setKnowledgeConnectorSettings(GoogleCloudDialogflowCxV3KnowledgeConnectorSettings $knowledgeConnectorSettings)
-  {
-    $this->knowledgeConnectorSettings = $knowledgeConnectorSettings;
-  }
-  /**
-   * @return GoogleCloudDialogflowCxV3KnowledgeConnectorSettings
-   */
-  public function getKnowledgeConnectorSettings()
-  {
-    return $this->knowledgeConnectorSettings;
   }
   /**
    * @param string

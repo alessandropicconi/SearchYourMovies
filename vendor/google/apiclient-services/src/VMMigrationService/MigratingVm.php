@@ -82,8 +82,6 @@ class MigratingVm extends \Google\Collection
    * @var string
    */
   public $updateTime;
-  protected $vmwareSourceVmDetailsType = VmwareSourceVmDetails::class;
-  protected $vmwareSourceVmDetailsDataType = '';
 
   /**
    * @param AwsSourceVmDetails
@@ -378,20 +376,6 @@ class MigratingVm extends \Google\Collection
   public function getUpdateTime()
   {
     return $this->updateTime;
-  }
-  /**
-   * @param VmwareSourceVmDetails
-   */
-  public function setVmwareSourceVmDetails(VmwareSourceVmDetails $vmwareSourceVmDetails)
-  {
-    $this->vmwareSourceVmDetails = $vmwareSourceVmDetails;
-  }
-  /**
-   * @return VmwareSourceVmDetails
-   */
-  public function getVmwareSourceVmDetails()
-  {
-    return $this->vmwareSourceVmDetails;
   }
 }
 

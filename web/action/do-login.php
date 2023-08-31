@@ -5,11 +5,17 @@ if(!isset($_SESSION)) session_start();
 
 
 include "../../db/db_conn.php";
+include "../../app/User.php";
+use App\User;
+
+
+$result = new User();
+$result->doLogin($_POST['email'],$_POST['password'],$conn);
 
 
 
 
-
+/*
 // verifica che i campi user_name e password siano stati inviati tramite il metodo POST
 if (isset($_POST['email']) && isset($_POST['password'])) {
 
@@ -82,4 +88,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 	header("Location: index.php");
 	exit();
 }
+*/
+
+
+
 ?>

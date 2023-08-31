@@ -1,5 +1,5 @@
 <?php
-session_start();
+if(!isset($_SESSION)) session_start();
 
 // Verifica se la sessione è attiva
 if (isset($_SESSION['id'])) {
