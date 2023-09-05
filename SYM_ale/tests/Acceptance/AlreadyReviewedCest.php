@@ -27,7 +27,7 @@ class AlreadyReviewedCest
         $wipe = "DELETE FROM reviews WHERE name='Test'";
         pg_query($conn,$wipe);
         $I->amOnPage('/web/pages/movie-detail.php?id=615656');
-        $I->see('Meg 2: The Trench');
+        $I->see('Lascia una recensione: Test');
         $I->see('Lascia una recensione: Test');
         $I->fillField('review', 'Recensione Visibile');
         $I->click(['id'=>'review-send']);
@@ -36,8 +36,6 @@ class AlreadyReviewedCest
         $I->click(['id'=>'review-send']);
         $I->see('Test:Recensione Visibile');
         $I->dontSee('Test:Recensione Non Visibile');
-        
-
 
     }
 }

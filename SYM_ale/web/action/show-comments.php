@@ -54,7 +54,14 @@ if(isset($_SESSION['user_name']) && $_SESSION['user_name']==$row[2]){
             <form method="post">
                 <button name="response" value="<?php echo "$row[0]" ?>" onclick="$('#area_testo_commenti').toggle()">Rispondi</button>
                 <textarea name="response-comment" type="text" cols="30" rows="1" id="area_testo_commenti" style="background-color:#ccc;border-radius: 10px;border:none;resize:none;text-align:left; margin-bottom:8px"></textarea>
+<?php
+if(isset($_SESSION['user_name']) && $_SESSION['user_name']==$rows[2]){
+
+?>
                 <button type="submit" name="delete-comment" value="<?php echo "$rows[0]" ?>"><i id="removeicon" class="far fa-trash-alt"></i></button>
+<?php
+}
+?>
                 <input type="hidden" name="movieTitle" value="<?php echo "$rows[4]" ?>"/>
                 <input type="hidden" name="movieId" value="<?php echo "$rows[3]" ?>"/>
             </form>

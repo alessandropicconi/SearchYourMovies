@@ -19,12 +19,12 @@
                 <form method="post" id="myForm2">
                     <input type="hidden" name="movieId" value="<?php echo "$row[3]" ?>"/>
                     <button type="submit" name="delete-review"><i id="removeicon" class="far fa-trash-alt"></i></button>
-                    <button type="button" name="update-review-toggle" onclick="$('#review-update').toggle()"><i class="fa fa-pencil"></i></button>
+                    <button type="button" name="update-review-toggle" onclick="$('#review-update<?php echo $row[3] ?>').toggle()"><i class="fa fa-pencil"></i></button>
                 
                 </form>
                 <form method="post">
                 <input type="hidden" name="movieId" value="<?php echo "$row[3]" ?>"/>
-                <div id="review-update" style="display:none">
+                <div id="review-update<?php echo $row[3] ?>" style="display:none">
                     <textarea name="review-update"></textarea>
                     <button type="submit" name="update-review">Cambia</button>
                 </div>   

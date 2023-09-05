@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    
     <!-- website title  -->
     <title>SYM</title>
     <!-- fontawesome (è una libreria di icone) icon link -->

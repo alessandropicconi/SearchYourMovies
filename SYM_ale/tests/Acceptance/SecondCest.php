@@ -33,7 +33,6 @@ public function Unban(AcceptanceTester $I) {
         $I->fillField(['name'=>'email'],'user@test.com');  #valore da cambiare
         $I->fillField(['name'=>'password'],'1');          #valore da cambiare
         $I->click('#login'); 
-        $I->wait(5);
         $I->see('Salve, user');                            #valore da cambiare
 }
 }

@@ -6,6 +6,9 @@ include "../../db/db_conn.php"; // Assicurati di includere il file di connession
 if (isset($_SESSION['id'])) {
     $user_id = $_SESSION['id'];
 
+    $delete_sql = "DELETE FROM favourites WHERE user_id='$user_id'";
+    $result = pg_query($conn, $delete_sql);
+
     // Esegue la query per eliminare l'account
     $delete_sql = "DELETE FROM users WHERE id='$user_id'";
     $result = pg_query($conn, $delete_sql);

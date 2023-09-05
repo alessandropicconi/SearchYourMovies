@@ -33,9 +33,14 @@ if (isset($_POST['uname']) && isset($_POST['email']) && isset($_POST['password']
 
 	// Creiamo una stringa contenente i dati dell'utente
 	$user_data = 'uname='. $uname. '&email='. $email;
-
+	// Controlliamo se l'email è vuota	
+	if(empty($email)){
+		$error_msg = "Email is required";
+		header("Location: /web/pages/signup.php?error=$error_msg&$user_data");
+		exit();
+	}
 	// Controlliamo se l'username è vuoto
-	if (empty($uname)) {
+	else if (empty($uname)) {
 		$error_msg = "Userame is required";
 		header("Location: /web/pages/signup.php?error=$error_msg&$user_data");
 		exit();
@@ -47,11 +52,6 @@ if (isset($_POST['uname']) && isset($_POST['email']) && isset($_POST['password']
 	// Controlliamo se la conferma password è vuota
 	} else if(empty($re_pass)){
 		$error_msg = "Confirm assword is required";
-		header("Location: /web/pages/signup.php?error=$error_msg&$user_data");
-		exit();
-	// Controlliamo se l'email è vuota	
-	} else if(empty($email)){
-		$error_msg = "Email is required";
 		header("Location: /web/pages/signup.php?error=$error_msg&$user_data");
 		exit();
 	// Controlliamo se la password e la conferma password corrispondono 
