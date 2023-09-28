@@ -13,6 +13,7 @@ delle recensioni dei film e ai commenti che gli utenti vogliono lasciare sui fil
 profilo dell’utente e alla rimozione di essi.
 
 User Stories:
+
 • Utente:
 1. Come utente voglio poter visualizzare la pagina iniziale con tutti i
 film. (N)
@@ -60,7 +61,9 @@ da parte anche di altri utenti. (A)
 19. Come utente, voglio poter lasciare un commento nella sezione commenti
 relativa ad un film. (A)
 20. Come utente, voglio poter rispondere ad un commento di un utente. (A)
+    
 • Amministratore:
+
 1. Come amministratore, desidero avere delle impostazioni di amministrazione in
 modo da poter eliminare gli utenti. (S)
 2. Come amministratore, desidero avere delle impostazioni di amministrazione in
