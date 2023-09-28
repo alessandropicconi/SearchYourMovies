@@ -1,7 +1,7 @@
 # SearchYourMovies
 Progetto per il Laboratorio di Applicazioni Software e Sicurezza Informatica 2023
 Il progetto riguarda lo sviluppo di una piattaforma di condivisione di opinioni tra utenti sui vari film, e la visualizzazione dei dettagli dei film stessi. Un utente può creare un profilo, aggiugnere film alla lista dei preferiti, lasciare recensioni e commenti su un film, e visualizzare le recensioni lasciate all'interno del suo profilo.
-
+L'applicazione è stata realizzata utilizzando, oltre a HTML e CSS per le pagine, JavaScript e jQuery, e per la maggior parte PHP. L'applicazione è testata utilizzando PHPUnit e Codeception.
 
 ▪ Descrizione suddivisione attività tra i componenti del gruppo di lavoro:
 Simone ha lavorato principalmente alla pagina dell’amministratore.
