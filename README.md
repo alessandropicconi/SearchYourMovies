@@ -72,17 +72,25 @@ dell’applicazione, compresa la gestione degli utenti e dei contenuti. (S)
 registrati. (S)
 
 Ruoli e Diritti di Accesso:
+
 -Utente non Registrato:
+
 Accesso a: Pagina iniziale con film, visualizzazione trama, trailer e punteggio di TMDB.
 Possibilità di: Sign up tramite e-mail o Google.
+
 -Utente Registrato:
+
 Accesso a: Tutto ciò a cui ha accesso l'utente non registrato.
 Possibilità di: Sign in dopo aver verificato l'account, gestione dei film preferiti, recensioni, profilo utente e
 commenti ai film.
+
 -Amministratore:
+
 Accesso a: Tutto ciò a cui hanno accesso gli utenti registrati, inoltre, accesso alle impostazioni di
 amministrazione e ricevuta delle segnalazioni utenti.
-Controllo dell'Accesso: Durante l'accesso al sistema, il sistema verificherà il ruolo dell'utente (utente non
+
+Controllo dell'Accesso:
+Durante l'accesso al sistema, il sistema verificherà il ruolo dell'utente (utente non
 registrato, utente registrato, amministratore) e lo reindirizzerà alla pagina appropriata in base a tale ruolo.
 Gli utenti non registrati possono accedere solo alle funzionalità limitate e alle pagine pubbliche. Una volta
 essersi registrati alla pagina all'utente verrà inviata una mail con il codice di verifica per completare la
